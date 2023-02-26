@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPowerOff, faLanguage, faSearch } from '@fortawesome/free-solid-svg-icons';
 import logo4 from '../images/2.gif';
+import ImageGrid from './Imagegrid';
 
 function User({ handleLogout }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [languageDropdownVisible, setLanguageDropdownVisible] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('');
   const [doctors, setDoctors] = useState([
-    { name: 'Doctor 1', specialty: 'Cardiologist', phone: '1234567890', languages: ['English', 'Hindi'] },
-    { name: 'Doctor 2', specialty: 'Dermatologist', phone: '2345678901', languages: ['Spanish'] },
-    { name: 'Doctor 3', specialty: 'Pediatrician', phone: '3456789012', languages: ['English', 'Spanish'] },
+    { name: 'Doctor 1', specialty: 'Cardiologist', phone: '1234567890', languages: ['English', 'Hindi','all'] },
+    { name: 'Doctor 2', specialty: 'Dermatologist', phone: '2345678901', languages: ['Spanish','all'] },
+    { name: 'Doctor 3', specialty: 'Pediatrician', phone: '3456789012', languages: ['English', 'Spanish','all'] },
   ]);
 
   const handleSearch = (event) => {
@@ -44,6 +45,12 @@ function User({ handleLogout }) {
                 
                 {languageDropdownVisible && (
                   <div className="absolute top-10 right-0 z-50 w-40 bg-white border rounded-md shadow-md">
+                    <button
+                      className="block py-2 px-4 hover:bg-gray-200"
+                      onClick={() => setSelectedLanguage('all')}
+                    >
+                      All
+                    </button>
                     <button
                       className="block py-2 px-4 hover:bg-gray-200"
                       onClick={() => setSelectedLanguage('English')}
@@ -110,17 +117,30 @@ function User({ handleLogout }) {
               <h2 className="text-2xl font-bold text-gray-800">{doctor.name}</h2>
               <p className="text-gray-600">{doctor.specialty}</p>
               <p className="text-gray-600">{doctor.phone}</p>
-              <p className="text-gray-600">{doctor.languages}</p>
             </div>
           ))}
         </div>
         <div className="w-full lg:w-2/5 mx-auto py-6 text-center">
           <img src={logo4} className="w-full"></img>
         </div>
+        
       </div>
+      <div class="flex justify-center items-center pb-8">
 
-    </div>
-  );
+          <ImageGrid/>
+      
+</div>
+
+<div className="mt-4 pb-10 flex justify-center items-center">
+  <button
+    className="bg-purple-500 text-white font-bold py-2 px-4 rounded text"
+    onClick={() => window.location.href = "#"}
+  >
+    Join your Community forum.
+  </button>
+</div>
+</div>
+);
 }
 
 export default User;
