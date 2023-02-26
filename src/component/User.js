@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPowerOff, faLanguage, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff, faLanguage} from '@fortawesome/free-solid-svg-icons';
 import logo4 from '../images/2.gif';
 import ImageGrid from './Imagegrid';
 
@@ -8,7 +8,7 @@ function User({ handleLogout }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [languageDropdownVisible, setLanguageDropdownVisible] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('');
-  const [doctors, setDoctors] = useState([
+  const [doctors] = useState([
     { name: 'Doctor 1', specialty: 'Cardiologist', phone: '1234567890', languages: ['English', 'Hindi','all'] },
     { name: 'Doctor 2', specialty: 'Dermatologist', phone: '2345678901', languages: ['Spanish','all'] },
     { name: 'Doctor 3', specialty: 'Pediatrician', phone: '3456789012', languages: ['English', 'Spanish','all'] },
@@ -121,7 +121,7 @@ function User({ handleLogout }) {
           ))}
         </div>
         <div className="w-full lg:w-2/5 mx-auto py-6 text-center">
-          <img src={logo4} className="w-full"></img>
+          <img src={logo4} className="w-full" alt='see'></img>
         </div>
         
       </div>

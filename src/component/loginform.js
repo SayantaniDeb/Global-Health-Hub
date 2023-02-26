@@ -104,7 +104,7 @@ function Loginform() {
         </button>
       </div>
     </form>
-    <img src={logo} alt="Your Image" className="h-full object-cover md:w-1/2" />
+    <img src={logo} alt="1" className="h-full object-cover md:w-1/2" />
   </div>
 </div>
 
