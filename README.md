@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Global Health Hub 
+![1](https://user-images.githubusercontent.com/74983536/221408675-a9810488-2257-492c-b55b-0defab63aa9f.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inspiration
 
-## Available Scripts
+ We were inspired by the growing need for accessible and inclusive healthcare services for individuals from different cultural backgrounds. We saw the potential for technology to bridge the gap and provide a platform for culturally-sensitive healthcare services.
 
-In the project directory, you can run:
+## What it does
 
-### `npm start`
+Global Health Hub is a telemedicine app that unites and supports cultural diversity by providing patients with access to healthcare providers who are trained in cultural competency. The app allows patients to easily connect with providers, schedule appointments, and receive virtual medical care from the comfort of their
+ own homes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How we built it
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+We built Global Health Hub using React JS for the frontend and Tailwind CSS for styling. React JS allowed us to create dynamic and responsive user interfaces quickly and efficiently, while Tailwind CSS provided a simple and intuitive way to style our components. By combining these two technologies, we were able to create a sleek and modern app that delivers a great user experience.
 
-### `npm test`
+Throughout the development process, we used modern software engineering practices such as component-based architecture, modular code design, and version control to ensure that our code was organized, maintainable, and scalable. We also made use of various libraries and tools such as React Router and React-lottie to have desired UI.
+Overall, our use of React JS and Tailwind CSS enabled us to build a high-quality app with a modern look and feel.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges we ran into
 
-### `npm run build`
+One of the biggest challenges we faced was creating a user-friendly interface that would accommodate the needs of patients from different cultures. We also had to ensure that the app complied with healthcare regulations and was secure enough to protect patient information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Accomplishments that we're proud of
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We are proud of creating an app that addresses the need for culturally-sensitive healthcare services. We were able to build a platform that connects patients with healthcare providers who are trained to provide quality care while respecting cultural differences.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What we learned
 
-### `npm run eject`
+ Throughout the development process, we learned a lot about the importance of cultural competency in healthcare and the challenges of designing an app that accommodates patients from different cultures. We also gained valuable experience in integrating third-party APIs and complying with healthcare regulations.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## What's next for Global Health Hub
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Our next steps for Global Health Hub include expanding the platform to include additional healthcare services and reaching more patients and healthcare providers globally. We also plan to conduct user testing and gather feedback to continually improve the app's functionality and user experience.
