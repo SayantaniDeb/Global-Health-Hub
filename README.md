@@ -5,6 +5,14 @@ Uniting diverse cultures for better healthcare.
 ## Inspiration
 
  We were inspired by the growing need for accessible and inclusive healthcare services for individuals from different cultural backgrounds. We saw the potential for technology to bridge the gap and provide a platform for culturally-sensitive healthcare services.
+ 
+## Login Info
+
+- To login as a Patient
+``UserName: User, Password: User123``
+
+- To login as a Doctor
+``UserName: admin, Password: admin123``
 
 ## What it does
 
