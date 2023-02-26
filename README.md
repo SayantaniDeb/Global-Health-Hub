@@ -1,5 +1,6 @@
 # Global Health Hub 
-![1](https://user-images.githubusercontent.com/74983536/221408675-a9810488-2257-492c-b55b-0defab63aa9f.gif)
+Uniting diverse cultures for better healthcare.
+<img src=https://user-images.githubusercontent.com/74983536/221408675-a9810488-2257-492c-b55b-0defab63aa9f.gif width=350 align="right">
 
 ## Inspiration
 
