@@ -11,7 +11,7 @@ Uniting diverse cultures for better healthcare.
 - To login as a Patient
 ``UserName: User, Password: User123``
 
-- To login as a Doctor
+- To login as a HealthCare worker
 ``UserName: admin, Password: admin123``
 
 ## What it does
