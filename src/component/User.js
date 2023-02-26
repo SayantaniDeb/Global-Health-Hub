@@ -134,9 +134,9 @@ function User({ handleLogout }) {
 <div className="mt-4 pb-10 flex justify-center items-center">
   <button
     className="bg-purple-500 text-white font-bold py-2 px-4 rounded text"
-    onClick={() => window.location.href = "#"}
+    onClick={() => window.location.href = "/Community"}
   >
-    Join your Community forum.
+    Join our Community
   </button>
 </div>
 </div>
