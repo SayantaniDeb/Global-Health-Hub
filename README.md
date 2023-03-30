@@ -9,7 +9,7 @@ Uniting diverse cultures for better healthcare.
 ## Login Info
 
 - To login as a Patient
-``UserName: User, Password: User123``
+``UserName: user, Password: user123``
 
 - To login as a HealthCare worker
 ``UserName: admin, Password: admin123``
