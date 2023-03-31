@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import Admin from "./Admin";
 import User from "./User";
 import logo from "../images/1.gif";
@@ -50,7 +54,7 @@ function Loginform() {
       const user = userCredential.user;
 
       if (user) {
-        setRole(role);
+        setRole(user.role);
         setIsLoggedIn(true);
       }
     } catch (error) {
@@ -124,42 +128,60 @@ function Loginform() {
               />
             </div>
             <div className="mb-4">
-              <label
-                className="block text-gray-700 font-bold mb-2"
-                htmlFor="role"
-              >
-                Role
-              </label>
-              <select
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="role"
-                value={role}
-                onChange={(event) => setRole(event.target.value)}
-                placeholder="Select your role"
-              >
-                <option value="">Select your role</option>
-                <option value="admin">Admin</option>
-                <option value="user">User</option>
-              </select>
-            </div>
-            <div className="flex items-center justify-between">
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Sign In
+                Login
               </button>
+            </div>
+          </form>
+          <form
+            className="bg-white shadow-md rounded px-8 pt-8 pb-8 mb-4 md:ml-4 md:mb-0"
+            onSubmit={handleRegister}
+          >
+            <h1 className="text-2xl font-bold mb-4">Register</h1>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="username"
+              >
+                Username
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username"
+                type="text"
+                value={username}
+                onChange={(event) => setUsername(event.target.value)}
+                placeholder="Enter your username"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 font-bold mb-2"
+                htmlFor="password"
+              >
+                Password
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="password"
+                type="password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                placeholder="Enter your password"
+              />
+            </div>
+            <div className="mb-4">
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                onClick={handleRegister}
+                type="submit"
               >
                 Register
               </button>
             </div>
           </form>
-          <div className="md:flex md:items-center md:justify-center">
-            <img src={logo} alt="logo" className="w-64 h-64" />
-          </div>
         </div>
       </div>
     );
